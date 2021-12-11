@@ -1,0 +1,148 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>Form2</title>
+        <link rel="stylesheet" href="./styles/styleForm2.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        
+    </head>
+    <body>
+        <div class="contrainer">
+            <div class="navigation">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><ion-icon name="outlet"></ion-icon></span>
+                            <span class="title">OEM</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="dashboard.html">
+                            <span class="icon"><ion-icon name="grid"></ion-icon></span>
+                            <span class="title">Dashbord</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><ion-icon name="archive"></ion-icon></span>
+                            <span class="title">สินค้าเข้า</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><ion-icon name="appstore"></ion-icon></span>
+                            <span class="title">สินค้าออก</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="form2.html">
+                            <span class="icon"><ion-icon name="person-add"></ion-icon></span>
+                            <span class="title">เพิ่มผู้ใช้งาน</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="main">
+                <div class="topbar">
+                    <div class="toggle">
+                        <ion-icon name="menu"></ion-icon>
+                    </div>
+                </div>
+                
+                <div class="details">
+                    <div class="addMember">
+                        <div class="cardHeader">
+                            <h2>เพิ่มผู้ใช้งาน</h2>
+                        </div>
+            
+                        <div class="formAddMember">
+                            <form name="form1" action="" method="post" class="form-horizontal">
+                                <div class="inputForm">
+                                    <label class="">First Name :</label>
+                                    
+                                        <input type="text" class="span11" placeholder="First name" name="firstname" required/>
+                                </div>
+        
+                                <div class="inputForm">
+                                    <label>Last Name :</label>
+                                    <input type="text" class="" placeholder="Last name" name="lastname" required/>
+                                </div>
+        
+                                <div class="inputForm">
+                                    <label class="">User Name:</label>
+                                    <input type="text" class="" placeholder="User name" name="username" required/>
+                                </div>
+                                    
+                                <div class="inputForm">
+                                    <label>Password:&nbsp&nbsp</label>
+                                    <input type="password"  class="" placeholder="Enter Password" name="password" minlength="8" required/>
+                                </div>
+        
+                                <div class="inputForm">
+                                    <label class="">Select Role</label>
+                                        <select name="role" class="">
+                                            <option>User</option>
+                                            <option>Admin</option>
+                                        </select>
+                                </div>
+        
+                                <div class="submitB">
+                                    <button type="submit" name="submit1" class="btn btn-success">Save</button>
+                                </div>
+                    </div>
+
+                    
+                </div>
+                <div class="details">
+                    <div class="member">
+                        <div class="cardHeader">
+                            <h2>ผู้ใช้งาน</h2>
+                        </div>
+                        <table class="tableUser">
+                            <thead>
+                                <tr>
+                                <th>First name</th>
+                                <th>last name</th>
+                                <th>User name</th>
+                                <th>Role</th>
+                                <th>Status</th>
+                                <th>Edit</th>
+                                <th>Delete</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>admin</td>
+                                    <td>admin</td>
+                                    <td>admin</td>
+                                    <td>admin</td>
+                                    <td>active</td>
+                                    <td><a href="">Edit</a></td>
+                                    <td><a href="">Delete</a></td>
+                                </tr>
+                                <tr>
+                                    <td>admin</td>
+                                    <td>admin</td>
+                                    <td>admin</td>
+                                    <td>admin</td>
+                                    <td>active</td>
+                                    <td><a href="">Edit</a></td>
+                                    <td><a href="">Delete</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                    </div>
+
+                    
+                </div>
+
+            </div>
+        </div>
+        
+    </body>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.2/dist/chart.min.js"></script>
+    <script src="./js/toggle.js"></script>
+</html>

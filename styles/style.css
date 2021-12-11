@@ -11,7 +11,7 @@
     text-align: center;
     padding: 20px;
     font-size: 32px;
-    background-color: rgb(164, 165, 255);
+    background-color: rgb(119, 120, 153);
     font-weight: 1000;
 }
 
@@ -20,7 +20,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    background-color: rgb(79, 96, 143);
+    background-color: rgb(152, 179, 255);
 }
 
 
