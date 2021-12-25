@@ -1,0 +1,44 @@
+.container#blur.active{
+    filter: blur(20px);
+}
+
+#popup{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0,0.3);
+    background: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    z-index: 1000;
+
+}
+#popup.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 00.5s;
+}
+
+#popup .exit{
+    position: relative;
+    bottom: 20px;
+    cursor: pointer;
+    float: right;
+    font-size: 32px;
+}
+
+#popup .detailPop{
+    position: relative;
+    top: 20px;
+}
+
+@media (max-width: 991px){
+    #popup{
+        width: 60%;
+    
+    }
+}

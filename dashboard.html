@@ -9,11 +9,12 @@
         <link rel="stylesheet" href="./styles/styleDetail.css">
         <link rel="stylesheet" href="./styles/styleResponsive.css">
         <link rel="stylesheet" href="./styles/styleChart.css">
+        <link rel="stylesheet" href="./styles/stylePopup.css">
         <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
         
     </head>
     <body>
-        <div class="contrainer">
+        <div class="container" id="blur">
             <div class="navigation">
                 <ul>
                     <li>
@@ -56,15 +57,17 @@
                 </div>
 
                 <div class="cardBox">
-                    <div class="card">
-                        <div>
-                            <div class="numbers">1,234</div>
-                            <div class="cardName">tilte</div>
+                    <a href="#" onclick="toBlur()" style="text-decoration: none;">
+                        <div class="card">
+                            <div>
+                                <div class="numbers">1,234</div>
+                                <div class="cardName">tilte</div>
+                            </div>
+                            <div class="iconBox">
+                                <ion-icon name="card"></ion-icon>
+                            </div>
                         </div>
-                        <div class="iconBox">
-                            <ion-icon name="card"></ion-icon>
-                        </div>
-                    </div>
+                    </a>
                     <div class="card">
                         <div>
                             <div class="numbers">1,234</div>
@@ -211,10 +214,45 @@
 
             </div>
         </div>
+        <div id="popup">
+            <div class="exit">
+                <ion-icon name="exit" onclick="toBlur()"></ion-icon>
+            </div>
+            <div class="detailPop">
+                <div class="recentCutomers">
+                    <div class="cardHeader">
+                        <h2>รายละเอียด</h2>
+                    </div>
+                    <table>
+                        <tr>
+                            <td width="60px"><div class="imgBx"><img src="./images/user.png" alt=""></div></td>
+                            <td><h4>สินค้า</h4><span>Italy</span></td>
+                        </tr>
+                        <tr>
+                            <td width="60px"><div class="imgBx"><img src="./images/user.png" alt=""></div></td>
+                            <td><h4>สินค้า</h4><span>Italy</span></td>
+                        </tr>
+                        <tr>
+                            <td width="60px"><div class="imgBx"><img src="./images/user.png" alt=""></div></td>
+                            <td><h4>สินค้า</h4><span>Italy</span></td>
+                        </tr>
+                        <tr>
+                            <td width="60px"><div class="imgBx"><img src="./images/user.png" alt=""></div></td>
+                            <td><h4>สินค้า</h4><span>Italy</span></td>
+                        </tr>
+                        <tr>
+                            <td width="60px"><div class="imgBx"><img src="./images/user.png" alt=""></div></td>
+                            <td><h4>สินค้า</h4><span>Italy</span></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
         
     </body>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.2/dist/chart.min.js"></script>
     <script src="./js/my_chart.js"></script>
     <script src="./js/toggle.js"></script>
+    <script src="./js/popup.js"></script>
 </html>
