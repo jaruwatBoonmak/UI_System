@@ -60,8 +60,8 @@
                     <a href="#" onclick="toBlur()" style="text-decoration: none;">
                         <div class="card">
                             <div>
-                                <div class="numbers">1,234</div>
-                                <div class="cardName">tilte</div>
+                                <div class="numbers">0</div>
+                                <div class="cardName">ยอดขายวันนี้ (บาท)</div>
                             </div>
                             <div class="iconBox">
                                 <ion-icon name="card"></ion-icon>
@@ -70,8 +70,8 @@
                     </a>
                     <div class="card">
                         <div>
-                            <div class="numbers">1,234</div>
-                            <div class="cardName">tilte</div>
+                            <div class="numbers">0</div>
+                            <div class="cardName">ยอดขายเดือนนี้ (บาท)</div>
                         </div>
                         <div class="iconBox">
                             <ion-icon name="cash"></ion-icon>
@@ -79,8 +79,20 @@
                     </div>
                     <div class="card">
                         <div>
-                            <div class="numbers">1,234</div>
-                            <div class="cardName">tilte</div>
+                            <div class="numbers">0</div>
+                            <div class="cardName">ยอดขายรวมทั้งปี (บาท) </div>
+                        </div>
+                        <div class="iconBox">
+                            <ion-icon name="basket"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cardBox" style="grid-template-columns: repeat(2, 1fr)">
+                    <div class="card">
+                        <div>
+                            <div class="numbers">0</div>
+                            <div class="cardName">หมวดหมู่ขายดีปีนี้</div>
                         </div>
                         <div class="iconBox">
                             <ion-icon name="basket"></ion-icon>
@@ -88,8 +100,8 @@
                     </div>
                     <div class="card">
                         <div>
-                            <div class="numbers">1,234</div>
-                            <div class="cardName">tilte</div>
+                            <div class="numbers">0</div>
+                            <div class="cardName">เปรียบเทียบยอดขาย ตั้งแต่ต้นปี (YTD)</div>
                         </div>
                         <div class="iconBox">
                             <ion-icon name="people"></ion-icon>
@@ -100,114 +112,81 @@
                 <!--Chart-->
                 <div class="graphBox">
                     <div class="box">
-                        <canvas id="myChart"></canvas>
-                    </div>
-                    <div class="box">
+                        <div class="cardHeader">
+                            <h2>ยอดขายรวม</h2>
+                        </div>
                         <canvas id="myChart2"></canvas>
                     </div>
 
+                    <div class="recentCutomers">
+                        <div class="cardHeader">
+                            <h2>สินค้าคงเหลือรายคลัง</h2>
+                        </div>
+                        <table>
+                            <tr>
+                                <td width="60px"><div class="imgBx"><img src="./images/user.png" alt=""></div></td>
+                                <td><h4>สินค้า</h4><span>Italy</span></td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imgBx"><img src="./images/user.png" alt=""></div></td>
+                                <td><h4>สินค้า</h4><span>Italy</span></td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imgBx"><img src="./images/user.png" alt=""></div></td>
+                                <td><h4>สินค้า</h4><span>Italy</span></td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imgBx"><img src="./images/user.png" alt=""></div></td>
+                                <td><h4>สินค้า</h4><span>Italy</span></td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imgBx"><img src="./images/user.png" alt=""></div></td>
+                                <td><h4>สินค้า</h4><span>Italy</span></td>
+                            </tr>
+                        </table>
+                    </div>
+                    
                 </div>
 
 
                 <div class="details">
+
                     <div class="recentOrders">
                         <div class="cardHeader">
-                            <h2>Recent Orders</h2>
+                            <h2>สินค้าเคลื่อนไหวย้อนหลัง 7 วัน</h2>
                             <a href="form.html" class="btn">View All</a>
                         </div>
                         <table>
                             <thead>
                                 <tr>
-                                    <td>Name</td>
-                                    <td>Price</td>
-                                    <td>Payment</td>
-                                    <td>Status</td>
+                                    <td>รหัสสินค้า</td>
+                                    <td>ชื่อสินค้า</td>
+                                    <td>เข้า</td>
+                                    <td>ออก</td>
+                                    <td>เปลี่ยนแปลง</td>
+                                    <td>คงเหลือ</td>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Star</td>
-                                    <td>$1200</td>
-                                    <td>Paid</td>
-                                    <td><span class="status delivered">Delivered</span></td>
+                                    <td>1234</td>
+                                    <td>ไข่</td>
+                                    <td> - </td>
+                                    <td>10 ฟอง </td>
+                                    <td>-10 ฟอง</td>
+                                    <td>120 ฟอง</td>
                                 </tr>
-                                <tr>
-                                    <td>Star</td>
-                                    <td>$1200</td>
-                                    <td>Paid</td>
-                                    <td><span class="status delivered">Delivered</span></td>
-                                </tr>
-                                <tr>
-                                    <td>Star</td>
-                                    <td>$1200</td>
-                                    <td>Paid</td>
-                                    <td><span class="status delivered">Delivered</span></td>
-                                </tr>
-                                <tr>
-                                    <td>Star</td>
-                                    <td>$1200</td>
-                                    <td>Paid</td>
-                                    <td><span class="status delivered">Delivered</span></td>
-                                </tr>
-                                <tr>
-                                    <td>Star</td>
-                                    <td>$1200</td>
-                                    <td>Paid</td>
-                                    <td><span class="status pending">Pending</span></td>
-                                </tr>
-                                <tr>
-                                    <td>Star</td>
-                                    <td>$1200</td>
-                                    <td>Paid</td>
-                                    <td><span class="status return">Return</span></td>
-                                </tr>
-                                <tr>
-                                    <td>Star</td>
-                                    <td>$1200</td>
-                                    <td>Paid</td>
-                                    <td><span class="status inprogress">In progress</span></td>
-                                </tr>
-                                <tr>
-                                    <td>Star</td>
-                                    <td>$1200</td>
-                                    <td>Paid</td>
-                                    <td><span class="status delivered">Delivered</span></td>
-                                </tr>
-                                <tr>
-                                    <td>Star</td>
-                                    <td>$1200</td>
-                                    <td>Paid</td>
-                                    <td><span class="status delivered">Delivered</span></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
 
-                    <div class="recentCutomers">
-                        <div class="cardHeader">
-                            <h2>สินค้าเข้า</h2>
-                        </div>
-                        <table>
-                            <tr>
-                                <td width="60px"><div class="imgBx"><img src="./images/user.png" alt=""></div></td>
-                                <td><h4>สินค้า</h4><span>Italy</span></td>
-                            </tr>
-                            <tr>
-                                <td width="60px"><div class="imgBx"><img src="./images/user.png" alt=""></div></td>
-                                <td><h4>สินค้า</h4><span>Italy</span></td>
-                            </tr>
-                            <tr>
-                                <td width="60px"><div class="imgBx"><img src="./images/user.png" alt=""></div></td>
-                                <td><h4>สินค้า</h4><span>Italy</span></td>
-                            </tr>
-                            <tr>
-                                <td width="60px"><div class="imgBx"><img src="./images/user.png" alt=""></div></td>
-                                <td><h4>สินค้า</h4><span>Italy</span></td>
-                            </tr>
-                            <tr>
-                                <td width="60px"><div class="imgBx"><img src="./images/user.png" alt=""></div></td>
-                                <td><h4>สินค้า</h4><span>Italy</span></td>
-                            </tr>
+                                <tr>
+                                    <td>1234</td>
+                                    <td>ไข่</td>
+                                    <td>10 ฟอง</td>
+                                    <td> - </td>
+                                    <td>+10 ฟอง</td>
+                                    <td>130 ฟอง</td>
+                                </tr>
+                               
+                            </tbody>
                         </table>
                     </div>
                 </div>

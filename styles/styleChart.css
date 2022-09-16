@@ -3,7 +3,7 @@
     width: 100%;
     padding: 20px;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 30px;
     min-height: 200px;
 }
@@ -15,4 +15,50 @@
     width: 100%;
     box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
     border-radius: 20px;
+}
+
+
+.graphBox .recentCutomers{
+    position: relative;
+    display: grid;
+    min-height: 50px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+}
+
+.graphBox .recentCutomers .imgBx{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+}
+
+.graphBox .recentCutomers .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.graphBox .recentCutomers table tr:hover{
+    background: blue;
+    color: white;
+}
+
+.graphBox .recentCutomers table tr td{
+    padding: 12px 10px;
+}
+
+.graphBox .recentCutomers table tr td h4{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2em;
+}
+.graphBox .recentCutomers table tr td span{
+    font-size: 14px;
+    color: rgb(162, 162, 162);
 }
